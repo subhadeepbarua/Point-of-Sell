@@ -225,7 +225,7 @@ const PointofSale = () => {
     <div className="pos_Dashboard">
       <div className="pos_DashboardItem1">
         <lable className="customerDetailsItems sales">
-          <p1>Sale - BookingOrder</p1>
+          <p1>Sale - Booking-Order</p1>
         </lable>
         <lable className="customerDetailsItems cashTick">
           <input type="checkbox"></input>
