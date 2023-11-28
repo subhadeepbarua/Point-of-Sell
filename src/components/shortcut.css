@@ -1,0 +1,14 @@
+.shortCut_Container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px ;
+    height: 12vh;
+    width: 90vw;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortcutPara{
+text-align: center;
+}

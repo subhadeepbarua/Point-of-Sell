@@ -1,0 +1,327 @@
+.pos_Dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    margin: 20px 0 0 0 ;
+    gap: 10px;
+    justify-items: center;
+  }
+  .pos_DashboardItem1,
+  .pos_DashboardItem2,
+  .pos_DashboardItem3,
+  .pos_DashboardItem4{
+    background-color: #ccffff;
+    border-radius: 10px;
+  }
+
+  .pos_DashboardItem1,
+  .pos_DashboardItem2 {
+    border: 2px solid black;
+    grid-column: span 4;
+    padding: 10px;
+    width: 90%;
+  }
+.pos_Cart.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartLogoContainer{
+  display: flex;
+  direction: row;
+  gap: 2vw;
+  margin-right: 5vh;
+  align-items: center;
+
+}
+.cart_logo{
+  background-color: pink;
+  width: 3vw;
+}
+  .pos_DashboardItem1 {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pos_DashboardItem2 {
+   
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customerDetailsItems.sales {
+    margin-right: 10px;
+  }
+
+  .customerDetailsItems.cashTick{
+    margin-right: 10px;
+  }
+
+  .customerDetailsItems.cusNum input[type='text']{
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .customerDetailsItems.cusName input[type='text']{
+    width: 80%;
+    padding: 8px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .customerDetailsItems.search input[type='text']{
+    width: 35vw;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .customerDetailsItems.quantity input[type='number']{
+    width: 5vw;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .customerDetailsItems.total{
+    background-color: white;
+    border: 1px solid black;
+    padding: 8.5px;
+    margin-left: 1%;
+    width: 10vw;
+    text-align: center;
+  }
+  .customerDetailsItems.total .totalPrice {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .cartBtn{
+    width: 10vw;
+    margin-left: 20px;
+    padding: 8px;
+    background-color: #77dd77;
+    text-align: center;
+  }
+  .pos_DashboardItem3,
+  .pos_DashboardItem4 {
+    grid-column: span 2;
+    height: 400px;
+    width: 40vw;
+    border: 2px solid black;
+  }
+
+  .customerDetailsItems.sales {
+    margin-left: 10px;
+  }
+
+  .pos_Cart.heading{
+    margin: 5px 0 20px 10px;
+  }
+  .cartTitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .pos_Cart.body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    overflow: auto;
+    overflow-y: auto;
+    max-height: 340px;
+  }
+  
+  .pos_CartCol, .pos_CartCell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  .pos_CartCell{
+    background:#f2f2f2 ;
+  }
+  
+  .pos_CartCol{
+    font-weight: bold;
+    background-color: #b3ffff;
+  }
+
+  .pos_Cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .billing_cart.heading{
+    margin: 5px 0 20px 10px;;
+  }
+
+  .billing_Cart.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .billing_CartItems {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto 10px; 
+    align-items: center;
+    margin-bottom:10px ;
+  }
+  
+  .billingCartbox {
+    background-color: rgb(240, 228, 228); 
+    width: 50%;
+    height: 30px;
+    display: inline-block;
+    margin: 2px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .billing_CartItems span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .billingCartbox input {
+    width: 100%; /* Make the input element fill the entire width of the box */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+   .billingCartBtns{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+   }
+
+   .billingCartBtn{
+    height: 5vh;
+    width: 15vw;
+    border-radius: 2px;
+   }
+   .billingCartBtn.cancel{
+    background-color: #ff6961;
+   }
+
+   .billingCartBtn.confirm{
+    background-color: #77dd77;
+   }
+  
+  .delete_logo{
+    width: 12%;
+  }
+
+  .splDis{
+    height: 100%;
+    border: none;
+    background-color: rgb(240, 228, 228);
+    justify-content: center; 
+    display: block;
+    margin: auto;
+    text-Align: center;
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .pos_DashboardItem3,
+    .pos_DashboardItem4 {
+      grid-column: span 4; /* Make them span the full width */
+      width: 94%; /* Set the width to 100% */
+    }
+  }
+  customerDetailsItems.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative; 
+
+  }
+  
+  .search-wrapper {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+
+ 
+  
+  .suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Position suggestion list below the input */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    max-height: 200%;
+    overflow-y: auto;
+  }
+  
+  .suggestion-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion-list li:hover {
+    background-color: #f0f0f0;
+  }
+  /* Add this CSS in your style sheet or in the head of your HTML */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn {
+  margin-top: 10px;
+}
