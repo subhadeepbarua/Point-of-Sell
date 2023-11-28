@@ -71,7 +71,7 @@ const PointofSale = () => {
   
     // Update MongoDB data in 'Product Inventory' collection
     try {
-      const updateResponse = await fetch('http://localhost:3001/api/update-products', {
+      const updateResponse = await fetch('https://point-of-sale-r286.onrender.com/api/update-products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ const PointofSale = () => {
           Total: Math.round(calculateGrandTotal()),
         };
   
-        const salesResponse = await fetch('http://localhost:3001/api/save-sales', {
+        const salesResponse = await fetch('https://point-of-sale-r286.onrender.com/api/save-sales', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -186,7 +186,7 @@ const PointofSale = () => {
   useEffect(() => {
     const fetchSuggestions = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/products');
+        const response = await fetch('https://point-of-sale-r286.onrender.com/api/products');
         const data = await response.json();
   
         // Filter suggestions based on user input
@@ -304,7 +304,7 @@ const PointofSale = () => {
         </div>
         <div className="pos_Cart body">
           <div className="pos_CartCol">NAME</div>
-          <div className="pos_CartCol">QTY</div>
+          <div className="pos_CartCol">QNTY</div>
           <div className="pos_CartCol">PRICE</div>
           <div className="pos_CartCol">AMOUNT</div>
           <div className="pos_CartCol">ACTION</div>
